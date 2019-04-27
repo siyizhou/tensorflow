@@ -6,7 +6,9 @@ tensorboard 作为一款可视化神器，可以说是学习tensorflow时模型�
 
 ### 相关函数：
 #### 1.tf.summary.scalar：
+#### tf.summary.scalar(tags, values, collections=None, name=None)
 用于展示Tensorflow中标量（scalar）监控数据随着迭代进行的变化趋势。比如：展示模型在训练batch上的正确率随着迭代进行的变化趋势。<br>
+一般在画loss,accuary时会用到这个函数。
 
 #### 2.tf.summary.histogram：
 用于展示Tensorflow中张量分布监控数据随着迭代伦数的变化趋势。比如：神经网络参数取值分布随着迭代进行的变化趋势。
